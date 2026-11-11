@@ -1,0 +1,13 @@
+curso "Algebra" {
+  evaluacion parcial1 peso 50%;
+  evaluacion parcial2 peso 50%;
+
+  estudiante "Sofia" {
+    parcial1 = 4.;
+    parcial2 = 3.5 @ 2;
+  }
+
+  si promedio("Sofia") ! 3.0 entonces {
+    mostrar "Sofia aprobo;
+  }
+}

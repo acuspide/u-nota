@@ -1,0 +1,36 @@
+# Notas del primer corte de Calculo I
+curso "Calculo I" {
+  evaluacion parcial1 peso 30%;
+  evaluacion parcial2 peso 30%;
+  evaluacion final    peso 40%;
+
+  estudiante "Ana Perez" {
+    parcial1 = 4.2;
+    parcial2 = 3.5;
+    final    = (4.0 + 3.8) / 2;
+  }
+
+  estudiante "Luis Gomez" {
+    parcial1 = 2.5;
+    parcial2 = 3.0;
+    final    = parcial2 - 0.4;
+  }
+
+  mostrar "Promedio de Ana:";
+  mostrar promedio("Ana Perez");
+
+  si promedio("Ana Perez") >= 3.0 entonces {
+    mostrar "Ana aprobo";
+  } sino {
+    mostrar "Ana reprobo";
+  }
+
+  si promedio("Luis Gomez") >= 3.0 entonces {
+    mostrar "Luis aprobo";
+  } sino {
+    mostrar "Luis reprobo";
+  }
+
+  mostrar "Promedio del curso:";
+  mostrar promedio();
+}

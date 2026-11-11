@@ -1,0 +1,13 @@
+curso "Estadistica" {
+  evaluacion parcial peso 50%;
+  evaluacion final peso 40%;
+
+  estudiante "Laura" {
+    parcial = 4.0;
+    quiz = 3.0;
+    final = 7.5;
+  }
+
+  mostrar promedio("Laura");
+  mostrar promedio("Andres");
+}

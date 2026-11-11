@@ -1,0 +1,4 @@
+curso "Logica" {
+  evaluacion quiz peso 100%;
+  mostrar 3 + 4 * 2;
+}

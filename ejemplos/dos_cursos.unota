@@ -1,0 +1,34 @@
+curso "Fisica" {
+  evaluacion taller peso 20%;
+  evaluacion examen peso 80%;
+
+  estudiante "Maria Rios" {
+    taller = 5.0;
+    examen = 4.1;
+  }
+
+  si promedio("Maria Rios") >= 4.5 entonces {
+    mostrar "Maria tiene beca";
+  }
+  mostrar promedio("Maria Rios");
+}
+
+curso "Quimica" {
+  evaluacion laboratorio peso 50%;
+  evaluacion quiz peso 50%;
+
+  estudiante "Pedro Diaz" {
+    laboratorio = 3.0 + 0.5 * 2;
+    quiz = 2.8;
+  }
+
+  si promedio("Pedro Diaz") < 3.0 entonces {
+    mostrar "Pedro debe habilitar";
+  } sino {
+    si promedio("Pedro Diaz") >= 4.0 entonces {
+      mostrar "Pedro: excelente";
+    } sino {
+      mostrar "Pedro aprobo";
+    }
+  }
+}

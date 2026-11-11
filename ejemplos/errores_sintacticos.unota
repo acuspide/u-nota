@@ -1,0 +1,15 @@
+curso "Programacion" {
+  evaluacion proyecto peso 60%
+  evaluacion examen 40%;
+
+  estudiante "Carlos" {
+    proyecto = 4.5;
+    examen 3.9;
+  }
+
+  mostrar promedio("Carlos") + ;
+
+  si promedio("Carlos") 3.0 entonces {
+    mostrar "Carlos aprobo";
+  }
+}
